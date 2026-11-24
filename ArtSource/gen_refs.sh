@@ -1,0 +1,23 @@
+#!/bin/bash
+# Generates image-to-3D reference images through the Codex CLI (ChatGPT image generation).
+CX="/c/Program Files/WindowsApps/OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0/app/resources/codex.exe"
+cd "$(dirname "$0")/refs"
+COMMON="Match the art style, colours and materials of the attached style sheet exactly (stylized 3D game asset, cream/coral-red/navy armour palette, orange and purple alien life, cyan glow accents). Single object only, fully visible, centred, plain flat light-grey background, soft even studio lighting, no cast shadow on the ground, no text, no labels, no extra objects. This image will be used for image-to-3D conversion."
+gen () { # name prompt
+  [ -f "$1.png" ] && { echo "skip $1"; return; }
+  "$CX" exec --skip-git-repo-check -s workspace-write "Use your built-in image generation tool to generate one image: $2 $COMMON Save the resulting PNG into the current directory as $1.png. Reply with only the saved file path." -i style_sheet.webp < /dev/null > "$1.log" 2>&1
+  [ -f "$1.png" ] && echo "ok $1" || echo "FAIL $1"
+}
+gen enemy "The ENEMY alien from the style sheet: a navy-blue armoured bipedal reptilian alien with an orange neck frill, crested head and clawed hands and feet. Full body, front three-quarter view, standing upright in a neutral A-pose with arms held away from the body at 45 degrees, fingers spread, legs shoulder-width apart, tail-less."
+gen carbine "The RIFLE from the style sheet, as a 'pulse carbine': a chunky sci-fi rifle in cream, coral-red and black with a small cyan light strip and a red-dot sight on top. Exact side view pointing right, no hands."
+gen arm "A single armoured sci-fi soldier's left forearm and gloved hand from the HERO in the style sheet: navy fabric glove, cream and coral-red forearm armour plates, cut off cleanly at the elbow. Arm extended straight and horizontal, hand open and relaxed with fingers slightly apart, viewed from above."
+gen fungus "The FLORA from the style sheet: a giant orange funnel-shaped alien fungus tree with a purple fluted trunk, glowing cyan veins inside the cup, and gnarled navy-purple roots at the base. Three-quarter view."
+gen station "The survey station outpost from the style sheet: a small cream and coral-red sci-fi habitat pod raised on four thick angled legs, with a band of dark windows, a satellite dish and two antenna masts on the roof. Three-quarter view."
+gen crate "The COVER crate from the style sheet: a low, wide cream and coral-red armoured supply container with a navy base and one small glowing cyan indicator light. Three-quarter view."
+gen arch "A massive natural alien rock arch like the ones in the background of the style sheet scene: twisted deep navy-blue and indigo layered rock forming a thick arch with two sturdy bases, with thin glowing cyan veins running through cracks and small patches of golden lichen. Three-quarter view."
+gen spire "A tall jagged alien rock spire formation: stacked angular deep navy-blue and indigo rock slabs rising to a point, with a few thin glowing cyan veins in the cracks, golden lichen patches, and a small cluster of orange coral at the base. Three-quarter view."
+gen boulder "A chunky cluster of three angular alien boulders: deep navy-blue and indigo faceted rock with lighter blue-violet edge highlights, fine cracks and small golden lichen speckles. Three-quarter view."
+gen bulbplant "A small alien plant: a cluster of five curved purple stalks each ending in a glowing cyan bioluminescent bulb, with broad glossy magenta-purple leaves at the base. Three-quarter view."
+gen alpha "A towering alien pack leader, the larger and far heavier cousin of the ENEMY alien in the style sheet: a hulking bipedal reptilian brute with a massive armoured chest and shoulders, huge thick forearms ending in heavy claws, a broad crested head set low between the shoulders, a wide spiked orange neck frill, and glowing orange vents between dark crimson and near-black armour plates. Full body, front three-quarter view, standing upright in a neutral A-pose with arms held away from the body at 45 degrees, legs shoulder-width apart, tail-less."
+gen spitter "A lean ranged alien, a slimmer cousin of the ENEMY alien in the style sheet: a tall thin bipedal reptilian with a long neck, a narrow head with a wide tube-like mouth, a swollen glowing cyan-green throat sac, slender arms, a small pale-green neck frill and dark teal armour plates. Full body, front three-quarter view, standing upright in a neutral A-pose with arms held away from the body at 45 degrees, fingers spread, legs shoulder-width apart, tail-less."
+echo ALLDONE

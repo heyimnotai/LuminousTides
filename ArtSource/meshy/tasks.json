@@ -1,0 +1,13 @@
+{"enemy": "01a1db90-8dcb-73a9-aade-12915b7d633b", "carbine": "01a1db90-94bf-7513-91b9-f83e40aeb83a", "arm": "01a1db90-99e9-7037-a087-265e36f9dfe9", "fungus": "01a1db90-9f75-72e1-8767-3146f09288fd", "station": "01a1db90-a53a-7167-8382-f3d281c03ef8", "crate": "01a1db90-ab55-7402-9c39-cd3f3ad8b28e"}
+{"arch": "01a1dbb4-f973-72d8-961b-44c20dd63a78", "spire": "01a1dbb4-ff83-7534-8bfc-2e5cc41a2d4b", "boulder": "01a1dbb5-04f2-748a-9c98-837d02d40b6b", "bulbplant": "01a1dbb5-0a82-75f4-a072-135d899073a2"}
+{"sight": "01a1dc05-684b-729d-be45-075bebd67f31"}
+{"shotgun": "01a1dc32-e1f5-71fd-9806-09467103096c"}
+{"alpha": "01a1dc77-ecbc-77da-8477-aa469297a23a", "spitter": "01a1dc77-f2d4-741e-9a26-7c85d5900e7f"}
+{"varrik_thrall": "01a1ddb1-a907-7569-823a-d3eb07dbdd57", "varrik_rifleman": "01a1ddb1-ae21-7622-b1be-563ad94af97e", "varrik_captain": "01a1ddb1-b3c8-77ae-b73b-9b6936f13cbe", "varrik_chieftain": "01a1ddb1-b9a9-725e-af21-3299ac0fd65f", "varrik_wraith": "01a1ddb1-c21f-773d-a0ec-7a29e52b679c"}
+{"varrik_captain2": "01a1dddb-e6cc-727c-bb80-d173bc1f39c0", "varrik_rifle": "01a1dddb-ecf4-72d0-810a-efa185cff416"}
+{"varrik_hound": "01a1dde7-edeb-7438-9227-4ebb23916b71", "varrik_kite": "01a1dde7-f426-750e-8369-21ab01ab141e", "varrik_strider": "01a1dde7-fa44-74eb-a4d1-ddad50a3ecfd", "varrik_queen": "01a1dde8-0037-7290-a4d4-1c6b0151bfe1"}
+{"varrik_ship": "01a1e09e-1626-742a-8162-7993cffaea26", "stormgate": "01a1e09e-1c38-77c2-b70e-825b1ebcbae5"}
+{"handcannon": "01a1e0d5-cf22-7687-94b0-2bf8626e058e"}
+{"player": "01a1e105-6884-77fe-9470-e986b4891f2a"}
+{"citadel_stack": "01a1e165-bfa3-70a9-bc53-ede7d53b52cc", "citadel_cliff": "01a1e165-c93c-74ce-b2c3-411a4fdb0682", "citadel_colonnade": "01a1e165-d084-7086-b944-8ab7b2b2e0ee", "citadel_arch": "01a1e165-d770-7624-b272-3fc9045e2259", "citadel_head": "01a1e165-dd60-74a0-9cbf-a775c68ea58f", "citadel_wall": "01a1e165-e443-775c-a05b-7f7f592cc658"}
+{"citadel_stairs": "01a1e17f-579e-70bd-9821-ee9bf0df826e", "citadel_bridge": "01a1e17f-5ed6-710d-b862-d9caa3361855", "citadel_tower": "01a1e17f-6590-76c2-a6de-97fad0edbe26", "citadel_terrace": "01a1e17f-6bc1-7459-b22a-cd082dc15b30", "citadel_arenawall": "01a1e17f-7349-7550-92de-07fc01857956", "citadel_tusk": "01a1e17f-795d-702c-a3c2-e7585999652f", "citadel_dais": "01a1e17f-7eb1-73a4-9268-06d46c3cf141", "citadel_statue": "01a1e17f-8530-7603-9338-878522b58fa1", "citadel_rubble": "01a1e17f-8bb3-7314-8bc6-adf83cfb71fb", "citadel_obelisk": "01a1e17f-9600-7005-8f57-7114f32b4b7b"}
